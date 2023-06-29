@@ -1,6 +1,22 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
+function NavItem({ to, children }) {
+  return (
+    <NavLink
+      to={to}
+      className={({ isActive, isPending }) =>
+        isPending
+          ? 'px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-300 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black'
+          : isActive
+          ? 'px-3 py-2 rounded-md text-sm font-medium bg-white text-black'
+          : 'px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-300 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black'
+      }
+    >
+      {children}
+    </NavLink>
+  );
+}
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = React.useState(false);
 
@@ -53,33 +69,18 @@ const Navbar = () => {
 
           {/* Desktop menu */}
           <div className="hidden sm:flex sm:items-center">
-            
-            <NavLink to='/'><a
-              
-              className="px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-300 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black"
-            >
+            <NavItem to='/'>
               Home
-            </a>
-            </NavLink>
-            <NavLink to='/about'>
-            <a
-              className="px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-300 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black"
-            >
+            </NavItem>
+            <NavItem to='/about'>
               About
-            </a>
-            </NavLink>
-            <a
-              href="#"
-              className="px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-300 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black"
-            >
+            </NavItem>
+            <NavItem to="/blog">
               Blogs
-            </a>
-            <a
-              href="#"
-              className="px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-300 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black"
-            >
+            </NavItem>
+            <NavItem to="/contact">
               Contact
-            </a>
+            </NavItem>
           </div>
         </div>
       </div>
@@ -87,35 +88,19 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="sm:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-          <NavLink to='/'>
-            <a
-    
-              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-300 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black"
-            >
+          <div className="flex flex-col px-2 pt-2 pb-3 space-y-1">
+          <NavItem to='/'>
               Home
-            </a>
-            </NavLink>
-            <NavLink to='/about'>
-            <a
-              href="#"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-300 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black"
-            >
+            </NavItem>
+            <NavItem to='/about'>
               About
-            </a>
-            </NavLink>
-            <a
-              href="#"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-300 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black"
-            >
+            </NavItem>
+            <NavItem to="/services">
               Services
-            </a>
-            <a
-              href="#"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-300 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black"
-            >
+            </NavItem>
+            <NavItem to="/contact">
               Contact
-            </a>
+            </NavItem>
           </div>
         </div>
       )}

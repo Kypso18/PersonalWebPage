@@ -7,13 +7,13 @@ function Home() {
      background: "linear-gradient(90deg, rgba(131, 126, 226, 0.55) 24%, rgba(114, 114, 226, 0.55) 58%, rgba(0, 212, 255, 0.55) 100%)"
    
    }}>
-     <div class="mbcontainer mx-auto flex px-5 py-24 items-center justify-center flex-col-2gi">
+     <div class="mbcontainer mx-auto flex flex-col md:flex-row px-5 py-24 items-center justify-center">
        <img class="lg:w-2/6 md:w-4/6 w-5/6 mb-10 object-cover object-center rounded-lg" alt="profile" src={Profile}/>
        <div class="text-center pr-2 lg:w-5/12 w-full">
-         <h1 className="my-4 text-5xl font-bold leading-tight">
+       <h1 className="my-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">   
            Turn your designs into production-ready frontend
          </h1>
-         <p className="text-2xl mb-8">
+         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8">
            Ship products 5-10x faster with your existing design tools, tech stacks & workflows!
          </p>
          <div className="flex justify-center mx-auto">
