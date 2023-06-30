@@ -7,10 +7,10 @@ function NavItem({ to, children }) {
       to={to}
       className={({ isActive, isPending }) =>
         isPending
-          ? 'px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-300 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black'
+          ? 'px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black'
           : isActive
           ? 'px-3 py-2 rounded-md text-sm font-medium bg-white text-black'
-          : 'px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-300 hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black'
+          : 'px-3 py-2 rounded-md text-sm font-medium text-white hover:bg-white hover:text-black focus:outline-none focus:bg-white focus:text-black'
       }
     >
       {children}
@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-300">
+    <nav className="bg-blue-300/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -35,10 +35,10 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="flex -mr-2 sm:hidden bg-blue-300">
+          <div className="flex -mr-2 sm:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-blue-200 focus:outline-none focus:bg-blue-300"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white focus:outline-none"
               onClick={handleMenuToggle}
             >
               <svg
