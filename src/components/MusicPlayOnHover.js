@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Profile from '../assets/profile.png'
-import Music from '../assets/Cupid.mp3';import { saveAs } from 'file-saver';
+import Music from '../assets/Cupid.mp3';
+import DownloadButton from '../components/DownloadButton';
 
 const MusicPlayOnHover = () => {
   const audioRef = useRef(null);
@@ -14,13 +15,6 @@ const MusicPlayOnHover = () => {
     audioRef.current.currentTime = 0;
   };
 
-  const handleDownload = () => {
-    const fileUrl = "../assets/Skipper_PalomaResume2023.pdf";
-    const fileName = "Skipper_PalomaResume2023.pdf"; 
-  
-    // Trigger the file download using file-saver
-    saveAs(fileUrl, fileName);
-  };
 
   return (
     <div className="mbcontainer mx-auto flex flex-col md:flex-row px-5 py-24 items-center justify-center">
@@ -39,11 +33,7 @@ const MusicPlayOnHover = () => {
           Skipper Matthew A. Paloma
         </h1>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8">Front-end Developer</p>
-        <div className="flex justify-center mx-auto">
-          <button className="bg-white/90 text-gray-800 font-bold rounded-full py-4 px-8 items-center animate-pulse hover:underline" onClick={handleDownload}>
-              Get my Resume/CV
-          </button>
-        </div>
+        <DownloadButton />
         <p className="mt-6 items-center text-center l
          text-white/60 text-xl font-bold ">
   Hover Over Me
@@ -56,4 +46,4 @@ const MusicPlayOnHover = () => {
   );
 };
 
-export default MusicPlayOnHover;
+export default MusicPlayOnHover

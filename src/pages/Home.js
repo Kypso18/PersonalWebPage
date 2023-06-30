@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
-import { SiTailwindcss } from 'react-icons/si';
+import { SiTailwindcss, SiBootstrap,SiJavascript, SiPython } from 'react-icons/si';
 import { FaEnvelope, FaPhone, FaViber, FaFacebookMessenger, FaTelegram } from 'react-icons/fa';
 import Divider from '../components/Divider';
 import MusicPlayOnHover from '../components/MusicPlayOnHover'
@@ -8,12 +8,15 @@ import SwiperContainer from '../components/Swiper';
 
 function Home() {
   const skills = [
-    { name: 'HTML', icon: <FaHtml5 />, level: 'Advanced' },
-    { name: 'CSS', icon: <FaCss3 />, level: 'Advanced' },
-    { name: 'React.js', icon: <FaReact />, level: 'Expert' },
-    { name: 'Node.js', icon: <FaNodeJs />, level: 'Intermediate' },
-    { name: 'Database', icon: <FaDatabase />, level: 'Intermediate' },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 'Advanced' },
+    { name: 'HTML', icon: <FaHtml5 />, level: 'Novice' },
+    { name: 'CSS', icon: <FaCss3 />, level: 'Novice' },
+    { name: 'Bootstrap', icon: <SiBootstrap />, level: 'Novice' },
+    { name: 'Javascript', icon: <SiJavascript />, level: 'Novice' },
+    { name: 'React.js', icon: <FaReact />, level: 'Novice' },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 'Novice' },
+    { name: 'SQL', icon: <FaDatabase />, level: 'Novice' },
+    { name: 'Python', icon: <SiPython />, level: 'Beginner' },
+    { name: 'Node.js', icon: <FaNodeJs />, level: 'Novice' }
   ];
  return (
    <section className="w-auto h-full text-white" style={{
@@ -55,34 +58,36 @@ function Home() {
       <div className="flex flex-wrap justify-center items-center space-x-4">
         <div className="flex items-center space-x-2">
           <FaEnvelope className="text-white" />
-          <a href="mailto:your-email@gmail.com" className="text-white hover:underline">
-            your-email@gmail.com
+          <a target="_blank"
+            rel="noopener noreferrer"
+          href="mailto:skipperpaloma@gmail.com" className="text-white hover:underline">
+          skipperpaloma@gmail.com
           </a>
         </div>
         <div className="flex items-center space-x-2">
           <FaPhone className="text-white" />
-          <span className="text-white hover:underline">123-456-7890</span>
+          <a href="tel:+639055544025" className="text-white hover:underline">09055544025</a>
         </div>
         <div className="flex items-center space-x-2">
           <FaFacebookMessenger className="text-white" />
           <a
-            href="https://www.messenger.com/"
+            href="https://m.me/skipper.paloma"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:underline"
           >
-            Messenger
+            Messenger: Skipper Paloma
           </a>
         </div>
         <div className="flex items-center space-x-2">
           <FaViber className="text-white" />
-          <span className="text-white hover:underline">Viber</span>
+          <p
+           className="text-white hover:underline">Viber# : 09055544025 </p>
         
         </div>
         <div className="flex items-center space-x-2">
           <FaTelegram className="text-white" />
-          <a
-            href="https://telegram.me/"
+          <a href="https://t.me/skippspaloma"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:underline"

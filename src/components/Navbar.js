@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import WebLogo from '../assets/WebportLogo.png'
 
 function NavItem({ to, children }) {
   return (
@@ -29,9 +30,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <h1 className="text-black font-bold">Skipper</h1>
-            </div>
+              <img src={WebLogo}
+              alt='WebLogo'
+              className='object-contain hover:animate-pulse h-20 w-30'/>
           </div>
 
           {/* Mobile menu button */}
