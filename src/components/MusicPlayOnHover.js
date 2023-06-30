@@ -33,7 +33,7 @@ const MusicPlayOnHover = () => {
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8">Front-end Developer</p>
         <div className="flex justify-center mx-auto">
           <button className="bg-white/90 text-gray-800 font-bold rounded-full py-4 px-8 items-center animate-pulse">
-            <a className="hover:underline" href="../assetsSkipper_PalomaResume2023.pdf" download="Skipper_PalomaResume2023.pdf">
+            <a className="hover:underline" href="../assets/Skipper_PalomaResume2023.pdf" download="Skipper_PalomaResume2023.pdf">
               Get my Resume/CV
             </a>
           </button>
