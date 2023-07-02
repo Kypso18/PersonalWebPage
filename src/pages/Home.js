@@ -45,6 +45,8 @@ function Home() {
           'linear-gradient(90deg, rgba(131, 126, 226, 0.55) 24%, rgba(114, 114, 226, 0.55) 58%, rgba(0, 212, 255, 0.55) 100%)'
       }}
     >
+      <br></br>
+          
       <MusicPlayOnHover />
       <Divider />
       <br />
@@ -73,7 +75,7 @@ function Home() {
       <SwiperContainer />
       
       <Divider />
-      <div className="container mx-auto py-9 px-9">
+      <div className="container mx-auto py-8 px-9">
         <h2 className="text-2xl font-bold mb-4 text-center">Contact Details</h2>
         <div className="flex flex-wrap justify-center items-center space-x-4">
           <div className="flex items-center space-x-2">
@@ -134,6 +136,10 @@ function Home() {
      </br>
      <br>
      </br>
+     <br></br>
+     <br></br>
+          
+          
      
      
  

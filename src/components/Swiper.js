@@ -18,25 +18,26 @@ const SwiperContainer = () => {
         <h2 className="text-2xl text-center font-bold mb-4">My Projects</h2>
         <br></br>
         <br></br>
-      <Swiper
-        spaceBetween={5}
-        navigation
-        pagination={{ clickable: true }}
-        breakpoints={{
-          // When window width is >= 640px
-          640: {
-            slidesPerView: 1,
-          },
-          // When window width is >= 768px
-          768: {
-            slidesPerView: 2,
-          },
-          // When window width is >= 1024px
-          1024: {
-            slidesPerView: 3,
-          },
-        }}
-      >
+        <Swiper
+  spaceBetween={5}
+  navigation
+  pagination={{ clickable: true }}
+  breakpoints={{
+    // When window width is >= 640px
+    640: {
+      slidesPerView: 1,
+    },
+    // When window width is >= 768px
+    768: {
+      slidesPerView: 2,
+    },
+    // When window width is >= 1024px
+    1024: {
+      slidesPerView: 3,
+    },
+  }}
+>
+
         {projects.map((project, index) => (
           <SwiperSlide className='mb-10' key={index}>
             <div className="max-w-md mx-24 shadow-lg px-auto">

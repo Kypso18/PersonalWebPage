@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import WebLogo from '../assets/WebportLogo.png'
+import WebLogo from '../assets/WebportLogo.png';
 
 function NavItem({ to, children }) {
   return (
@@ -18,6 +18,7 @@ function NavItem({ to, children }) {
     </NavLink>
   );
 }
+
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = React.useState(false);
 
@@ -26,13 +27,15 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-300/80">
+    <nav className="fixed top-0 left-0 w-full bg-blue-300/80 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-              <img src={WebLogo}
+            <img
+              src={WebLogo}
               alt='WebLogo'
-              className='object-contain hover:animate-pulse h-20 w-30'/>
+              className='object-contain hover:animate-pulse h-20 w-30'
+            />
           </div>
 
           {/* Mobile menu button */}
@@ -88,16 +91,16 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="sm:hidden">
-          <div className="flex flex-col px-2 pt-2 pb-3 space-y-1">
-          <NavItem to='/'>
+        <div className="sm:hidden bg-blue-300/80">
+          <div className="flex flex-col px-2 pt-2 pb-2 space-y-1">
+            <NavItem to='/'>
               Home
             </NavItem>
             <NavItem to='/about'>
               About
             </NavItem>
             <NavItem to="/blogs">
-            Blogs
+              Blogs
             </NavItem>
             <NavItem to="/hireme">
               Hire Me

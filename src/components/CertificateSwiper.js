@@ -46,7 +46,7 @@ const CertificateSwiper = () => {
     window.open(url, '_blank');
   };
   return (
-    <div className="container mx-auto my-6 py-5 px-9">
+    <div className="container mx-auto px-9">
     <Swiper
       navigation
       pagination={{ clickable: true }}

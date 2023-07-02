@@ -33,28 +33,29 @@ const About = () => {
     <section className="w-auto h-full text-white" style={{
       background: "linear-gradient(90deg, rgba(131, 126, 226, 0.55) 24%, rgba(114, 114, 226, 0.55) 58%, rgba(0, 212, 255, 0.55) 100%)"
     }}>
+      <br></br>
+        <br></br>
+        <br></br>
       <div className='flex flex-col lg:flex-row'>
         
-      <div className='lg:w-3/5 px-14 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-6 drop-shadow-2xl'>
-      <br />
-      <br />
+      <div className='lg:w-3/5 px-14 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-2 drop-shadow-2xl'>
       <img
-  className="lg:w-2/6 md:w-4/6 w-4/6 mx-auto mb-10 object-cover object-center rounded-full shadow-2xl opacity-95 hover:animate-spin"
+  className="mt-3 lg:w-2/6 md:w-4/6 w-4/6 mx-auto mb-3 pt-1 object-cover object-center rounded-full shadow-2xl opacity-95"
   alt="aboutpic"
   src={AboutPic}
 />
 
-      <h2 className="text-2xl text-center lg:text-left font-bold mb-4">About Me</h2>
-      <p className="text-base text-center lg:text-left font-bold mb-4 text-gray-800 px-3">
-        Allow me to introduce myself. I am a passionate individual with a knack for problem-solving and effective communication. With a diverse range of experiences and a thirst for knowledge, I strive to make a positive impact in both my professional and personal life.
+      <h2 className="text-2xl text-center lg:text-left font-bold mb-2">&nbsp; About Me</h2>
+      <p className="text-base text-center lg:text-left font-bold mb-2 text-gray-800 px-3">
+      &nbsp; &nbsp; Allow me to introduce myself. I am a passionate individual with a knack for problem-solving and effective communication. With a diverse range of experiences and a thirst for knowledge, I strive to make a positive impact in both my professional and personal life.
       </p>
-      <p className="text-base text-center lg:text-left font-bold mb-4 text-gray-800 px-3">
-              In my previous roles, I gained valuable skills and certifications that have shaped my professional journey. As a Marketing Intern at Figaro Coffee Company, I excelled in managing inventory, organizing marketing materials, and ensuring customer satisfaction through empathetic support. Additionally, as a Customer Service Representative at Harte Hanks, I honed my abilities to address billing concerns and provide technical assistance, all while maintaining a focus on fraud prevention and account security.
+      <p className="text-base text-center lg:text-left font-bold mb-2 text-gray-800 px-3">
+      &nbsp; &nbsp; In my previous roles, I gained valuable skills and certifications that have shaped my professional journey. As a Marketing Intern at Figaro Coffee Company, I excelled in managing inventory, organizing marketing materials, and ensuring customer satisfaction through empathetic support. Additionally, as a Customer Service Representative at Harte Hanks, I honed my abilities to address billing concerns and provide technical assistance, all while maintaining a focus on fraud prevention and account security.
             </p>
-            <p className="text-base text-center lg:text-left font-bold mb-4 text-gray-800 px-3">
-            Beyond my professional endeavors, I have actively contributed to my community as a volunteer and leader. Serving as the Vice President for Development at Core PH and Project Manager at IET Society at RTU, I developed and executed strategies for leadership events, fostering an environment of learning and enjoyment. My ability to analyze situations, empathize with others, and multitask efficiently has greatly aided me in these roles.
+            <p className="text-base text-center lg:text-left font-bold mb-2 text-gray-800 px-3">
+            &nbsp; &nbsp;Beyond my professional endeavors, I have actively contributed to my community as a volunteer and leader. Serving as the Vice President for Development at Core PH and Project Manager at IET Society at RTU, I developed and executed strategies for leadership events, fostering an environment of learning and enjoyment. My ability to analyze situations, empathize with others, and multitask efficiently has greatly aided me in these roles.
             </p>
-      <div className="text-center pb-4">
+      <div className="text-center pb-2">
         <button
           className="text-black/60 font-bold py-2 px-4 rounded hover:underline"
           onClick={toggleModal}
@@ -66,14 +67,14 @@ const About = () => {
         <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-black bg-opacity-90">
           <div className="bg-grey-300/60 p-6 mx-2 md:mx-0 rounded shadow-lg">
           <p className="text-base font-bold mb-4 px-4">
-          My commitment to personal growth is reflected in my educational accomplishments. I hold a Diploma in Industrial Engineering Technology from Rizal Technological University, where I gained a strong foundation in problem-solving and critical thinking. Furthermore, I have obtained certifications such as Lean Six Sigma Yellow Belt, Google Certificates in Project Management and Data Analytics, and TESDA NCII in Consumer Electronics.
+          &nbsp; &nbsp;My commitment to personal growth is reflected in my educational accomplishments. I hold a Diploma in Industrial Engineering Technology from Rizal Technological University, where I gained a strong foundation in problem-solving and critical thinking. Furthermore, I have obtained certifications such as Lean Six Sigma Yellow Belt, Google Certificates in Project Management and Data Analytics, and TESDA NCII in Consumer Electronics.
             </p>
             <p className="text-base font-bold mb-4 px-4">
-            In addition to my certifications, I possess a wide range of technical skills, including proficiency in HTML, CSS, JavaScript, SQL, and various Microsoft Office programs. I am adept at utilizing Google Workspace, conducting research, managing events, and utilizing Canva for creative projects. With my exceptional communication skills, both written and verbal, I excel at building connections and facilitating productive conversations.
+            &nbsp; &nbsp;In addition to my certifications, I possess a wide range of technical skills, including proficiency in HTML, CSS, JavaScript, SQL, and various Microsoft Office programs. I am adept at utilizing Google Workspace, conducting research, managing events, and utilizing Canva for creative projects. With my exceptional communication skills, both written and verbal, I excel at building connections and facilitating productive conversations.
             </p>
             
             <p className="text-base font-bold mb-4 px-4">
-              In summary, I am a friendly and intelligent individual with a passion for continuous learning and making a difference. I bring a combination of technical expertise, interpersonal skills, and leadership abilities to every endeavor I undertake. I firmly believe that productive conversations start with listening, and I am excited to contribute my unique skill set to future opportunities.
+            &nbsp; &nbsp;In summary, I am a friendly and intelligent individual with a passion for continuous learning and making a difference. I bring a combination of technical expertise, interpersonal skills, and leadership abilities to every endeavor I undertake. I firmly believe that productive conversations start with listening, and I am excited to contribute my unique skill set to future opportunities.
             </p>
             <button
               className="text-white bg-gray-300/40 py-2 px-4 mx-auto rounded mt-4 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
@@ -91,7 +92,7 @@ const About = () => {
           <br></br>
           <br></br>
           
-          <h2 className="text-2xl text-center justify lg:text-left font-bold mb-4 ml-2 mt-3">Academic Background</h2>
+          <h2 className="text-2xl text-center justify lg:text-left font-bold mb-2 ml-2 mt-3">Academic Background</h2>
         </div>
         <div className='px-16 items-center place-content-center'>
           <br></br>
@@ -146,15 +147,18 @@ const About = () => {
       </div>
     </div>
     <br></br>
+    <br></br>
     <Divider  />
     <br></br>
     <br></br>
     <div>
-      <h2 className="text-2xl text-center font-bold mb-4">My Certificates</h2>
+      <h2 className="text-2xl text-center font-bold">My Certificates</h2>
       <CertificateSwiper />
       </div>
       <br></br>
-    <Divider  />
+      <br></br>
+    
+      
     <br></br>{showScrollTop && (
         <div
           className="animate-bounce hover:bg-blue-400 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 fixed bottom-8 right-8 bg-white/50 text-gray-900 p-2 rounded-full cursor-pointer shadow"
