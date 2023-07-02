@@ -70,11 +70,11 @@ const CertificateSwiper = () => {
       {certificates.map((certificate) => (
         <SwiperSlide className='mb-5' key={certificate.id} onClick={() => handleClick(certificate.url)}>
         <div className="flex justify-center">
-          <div className="py-12 px-9">
+          <div className="py-12 px-12">
             <img
               src={certificate.image}
               alt={certificate.title}
-              className="px-4 h-auto max-w-xl w-full rounded-lg shadow-xl dark:shadow-gray-800 cursor-pointer"
+              className="px-6 h-auto max-w-xl w-full rounded-lg shadow-xl dark:shadow-gray-800 cursor-pointer"
             />
           </div>
         </div>

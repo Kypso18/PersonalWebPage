@@ -75,8 +75,8 @@ function Home() {
       <SwiperContainer />
       
       <Divider />
-      <div className="container mx-auto py-8 px-9">
-        <h2 className="text-2xl font-bold mb-4 text-center">Contact Details</h2>
+      <div className="container mx-auto py-10 px-9">
+        <h2 className="text-2xl font-bold mb-2 mt-2 text-center">Contact Details</h2>
         <div className="flex flex-wrap justify-center items-center space-x-4">
           <div className="flex items-center space-x-2">
             <FaEnvelope className="text-white" />
@@ -138,6 +138,10 @@ function Home() {
      </br>
      <br></br>
      <br></br>
+     <br></br>
+     <br></br>
+     
+     
           
           
      
