@@ -14,7 +14,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const SwiperContainer = () => {
   return (
     
-    <div className="container mx-auto my-6 py-5 px-9">
+    <div className="container mx-auto my-9 py-10 px-9">
         <h2 className="text-2xl text-center font-bold mb-4">My Projects</h2>
         <br></br>
         <br></br>
