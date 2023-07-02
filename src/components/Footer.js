@@ -4,7 +4,7 @@ import {  BsFacebook, BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 
 export default function FooterWithSocialMediaIcons() {
   return (
-    <Footer className='px-9 bg-blue-300/80 rounded-none' container >
+    <Footer className='px-9  bg-blue-300/80 rounded-none' container >
       <div className="w-full text-center">
         <div className= "px-9 text-bold w-full sm:flex sm:items-center sm:justify-between">
           <Footer.Copyright className='text-white hover:text-black'

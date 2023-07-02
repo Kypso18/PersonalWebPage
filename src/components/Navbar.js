@@ -76,11 +76,11 @@ const Navbar = () => {
             <NavItem to='/about'>
               About
             </NavItem>
-            <NavItem to="/blog">
+            <NavItem to="/blogs">
               Blogs
             </NavItem>
-            <NavItem to="/contact">
-              Contact
+            <NavItem to="/hireme">
+              Hire Me
             </NavItem>
           </div>
         </div>
@@ -96,11 +96,11 @@ const Navbar = () => {
             <NavItem to='/about'>
               About
             </NavItem>
-            <NavItem to="/services">
-              Services
+            <NavItem to="/blogs">
+            Blogs
             </NavItem>
-            <NavItem to="/contact">
-              Contact
+            <NavItem to="/hireme">
+              Hire Me
             </NavItem>
           </div>
         </div>

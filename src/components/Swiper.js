@@ -4,8 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 
 // Import your project data
-import projects from './projectsData';
-
+import projects from './projectsData'
 // Import Tailwind CSS classes
 import 'tailwindcss/tailwind.css';
 
