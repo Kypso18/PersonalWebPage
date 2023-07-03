@@ -49,8 +49,8 @@ function Home() {
           
       <MusicPlayOnHover />
       <Divider />
-      <br />
-      <div className="py-12 px-9">
+ 
+      <div className="py-10 px-9 topskills">
         <h2 className="text-2xl text-center font-bold mb-4">My Top Skills</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-2">
           {skills.map((skill, index) => (
@@ -67,16 +67,15 @@ function Home() {
           ))}
         </div>
       </div>
-      <br />
-      <br />
-      <br />
+  
+     
       <Divider />
-      <br />
+     
       <SwiperContainer />
       
       <Divider />
-      <div className="container mx-auto py-10 px-9">
-        <h2 className="text-2xl font-bold mb-2 mt-2 text-center">Contact Details</h2>
+      <div className="contact container mx-auto py-2 px-8 my-auto">
+        <h2 className="text-2xl font-bold mb-3 mt-7 text-center">Contact Details</h2>
         <div className="flex flex-wrap justify-center items-center space-x-4">
           <div className="flex items-center space-x-2">
             <FaEnvelope className="text-white" />

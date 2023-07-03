@@ -1,0 +1,11 @@
+* {
+    padding: 2px 2px;
+}
+
+@media (max-width: 414px) {
+   .shrink-img {
+      width: 5px;
+      height: 5px; 
+      padding: 4px 4px;
+    }
+  }

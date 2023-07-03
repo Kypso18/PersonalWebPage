@@ -92,7 +92,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="sm:hidden bg-blue-300/80">
-          <div className="flex flex-col px-2 pt-2 pb-2 space-y-1">
+          <div className="flex flex-col px-4 pt-2 pb-2 space-y-1">
             <NavItem to='/'>
               Home
             </NavItem>

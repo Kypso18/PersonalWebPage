@@ -14,8 +14,8 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const SwiperContainer = () => {
   return (
     
-    <div className="container mx-auto my-9 py-10 px-9">
-        <h2 className="text-2xl text-center font-bold mb-4">My Projects</h2>
+    <div className="container mx-auto my-4 py-18 px-8">
+        <h2 className="text-2xl text-center font-bold pt-4 mt-2 mb-3">My Projects</h2>
         <br></br>
         <br></br>
         <Swiper
@@ -41,8 +41,8 @@ const SwiperContainer = () => {
         {projects.map((project, index) => (
           <SwiperSlide className='mb-10' key={index}>
             <div className="max-w-md mx-24 shadow-lg px-auto">
-              <img src={project.coverPhoto} alt={project.title} className="w-full" />
-              <div className="p-4">
+              <img src={project.coverPhoto} alt={project.title} className="w-fit py-2" />
+              <div className="p-3">
                 <h2 className="text-xl font-bold mb-2">{project.title}</h2>
                 <a
                   href={project.redirectionLink}

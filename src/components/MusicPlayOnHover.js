@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import Profile from '../assets/profile.png'
 import Music from '../assets/Cupid.mp3';
 import DownloadButton from '../components/DownloadButton';
+import '../components/MusicPlayOnHover.css';
 
 const MusicPlayOnHover = () => {
   const audioRef = useRef(null);
@@ -17,9 +18,9 @@ const MusicPlayOnHover = () => {
 
 
   return (
-    <div className="mbcontainer mx-auto flex flex-col md:flex-row px-5 py-24 items-center justify-center">
+    <div className="mbcontainer mx-auto flex flex-col md:flex-row px-4 py-24 items-center justify-center">
       <img
-        className="lg:w-2/6 md:w-4/6 w-5/6 mb-10 object-cover object-center rounded-full shadow-2xl opacity-95 hover:animate-spin"
+        className="shrink-img w-3/6 lg:w-3/6 md:w-3/6 sm:w-3/6 mb-10 md:ml-10 object-cover object-center rounded-full shadow-2xl opacity-95 hover:animate-spin"
         alt="profile"
         src={Profile}
         onMouseEnter={handleMouseEnter}

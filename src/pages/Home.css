@@ -1,19 +1,9 @@
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 3rem;
+@media (max-width: 414px) {
+  .topskills {
+    padding: 2px 4px;
+
   }
-  
-  #weather-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .contact {
+    padding-top: 5px;
   }
-  
-  #weather-icon img {
-    max-width: 100%;
-    height: auto;
-  }
-  
+}
