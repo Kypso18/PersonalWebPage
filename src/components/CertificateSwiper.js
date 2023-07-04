@@ -5,6 +5,8 @@ import SwiperCore, { Navigation, Pagination } from 'swiper';
 import Cert1 from '../assets/certs/Cert1.jpg';
 import Cert2 from '../assets/certs/Cert2.jpg';
 import Cert3 from '../assets/certs/Cert3.jpg';
+import Cert4 from '../assets/certs/Cert4.png';
+import Cert5 from '../assets/certs/Cert5.jpg';
 
 
 
@@ -32,13 +34,15 @@ const CertificateSwiper = () => {
       },
       {
         id: 4,
-        title: 'Certificate 4',
-        image: 'path/to/certificate2.jpg',
+        title: 'Foundations: Data, Data, Everywhere',
+        image: Cert4,
+        url:'https://www.coursera.org/account/accomplishments/certificate/HJS2EFDCEBJE'
       },
       {
         id: 5,
-        title: 'Certificate 5',
-        image: 'path/to/certificate2.jpg',
+        title: 'Foundations of Project Management',
+        image: Cert5,
+        url: 'https://www.coursera.org/account/accomplishments/certificate/L9WXS8QLJKLV'
       }
    
   ];
@@ -68,17 +72,17 @@ const CertificateSwiper = () => {
       }}
     >
       {certificates.map((certificate) => (
-        <SwiperSlide className='mb-5' key={certificate.id} onClick={() => handleClick(certificate.url)}>
-        <div className="flex justify-center">
-          <div className="py-12 px-12">
-            <img
-              src={certificate.image}
-              alt={certificate.title}
-              className="px-6 h-auto max-w-xl w-full rounded-lg shadow-xl dark:shadow-gray-800 cursor-pointer"
-            />
-          </div>
-        </div>
-      </SwiperSlide>
+         <SwiperSlide className='mb-5' key={certificate.id} onClick={() => handleClick(certificate.url)}>
+         <div className="flex justify-center">
+           <div className="py-12 px-12 h-96">
+             <img
+               src={certificate.image}
+               alt={certificate.title}
+               className="object-contain h-full max-w-full rounded-lg shadow-xl dark:shadow-gray-800 cursor-pointer"
+             />
+           </div>
+         </div>
+       </SwiperSlide>
       ))}
     </Swiper>
     </div>

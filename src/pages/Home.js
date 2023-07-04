@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
 import { SiTailwindcss, SiBootstrap, SiJavascript, SiPython } from 'react-icons/si';
-import { FaEnvelope, FaPhone, FaViber, FaFacebookMessenger, FaTelegram, FaArrowUp } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaGithub, FaViber, FaFacebookMessenger, FaTelegram, FaArrowUp } from 'react-icons/fa';
 import Divider from '../components/Divider';
 import MusicPlayOnHover from '../components/MusicPlayOnHover';
 import SwiperContainer from '../components/Swiper';
+import ReviewSection from '../components/ReviewSection';
 
 function Home() {
   const skills = [
@@ -16,7 +17,8 @@ function Home() {
     { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 'Novice' },
     { name: 'SQL', icon: <FaDatabase />, level: 'Novice' },
     { name: 'Python', icon: <SiPython />, level: 'Beginner' },
-    { name: 'Node.js', icon: <FaNodeJs />, level: 'Novice' }
+    { name: 'Node.js', icon: <FaNodeJs />, level: 'Novice' },
+    { name: 'Github', icon: <FaGithub />, level: 'Novice' }
   ];
 
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -50,29 +52,37 @@ function Home() {
       <MusicPlayOnHover />
       <Divider />
  
+    
       <div className="py-10 px-9 topskills">
-        <h2 className="text-2xl text-center font-bold mb-4">My Top Skills</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-2">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="group flex items-center p-4 bg-grey-300/60 rounded shadow hover:bg-white"
-            >
-              <div className="text-2xl text-white group-hover:text-black mr-4 pl-2">{skill.icon}</div>
-              <div>
-                <h3 className="font-medium text-white group-hover:text-black">{skill.name}</h3>
-                <p className="text-gray-400">{skill.level}</p>
-              </div>
-            </div>
-          ))}
+  <h2 className="text-2xl text-center font-bold mb-4">My Top Skills</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2">
+    {skills.map((skill, index) => (
+      <div
+        key={index}
+        className="group flex items-center p-4 bg-grey-300/60 rounded shadow hover:bg-white w-full"
+      >
+        <div className="text-2xl text-white group-hover:text-black mr-4 pl-2">{skill.icon}</div>
+        <div>
+          <h3 className="font-medium text-white group-hover:text-black">{skill.name}</h3>
+          <p className="text-gray-400">{skill.level}</p>
         </div>
       </div>
-  
+    ))}
+  </div>
+</div>
+
+     
+
      
       <Divider />
      
       <SwiperContainer />
+      <Divider />
+      <div>  <h2 className="text-2xl font-bold mb-3 mt-7 text-center">Contact Details
+      </h2></div>
+     
       
+      <ReviewSection />.
       <Divider />
       <div className="contact container mx-auto py-2 px-8 my-auto">
         <h2 className="text-2xl font-bold mb-3 mt-7 text-center">Contact Details</h2>
