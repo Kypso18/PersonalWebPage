@@ -20,7 +20,7 @@ const MusicPlayOnHover = () => {
   return (
     <div className="mbcontainer mx-auto flex flex-col md:flex-row px-4 py-24 items-center justify-center">
       <img
-        className="shrink-img w-2/4 lg:w-2/6 md:w-2/6 sm:w-2/6 mb-10 md:ml-10 object-cover object-center rounded-full shadow-2xl opacity-95 hover:animate-spin"
+        className="shrink-img w-2/6 lg:w-2/6 md:w-2/6 sm:w-2/6 mb-10 md:ml-10 object-cover object-center rounded-full shadow-2xl opacity-95 hover:animate-spin"
         alt="profile"
         src={Profile}
         onMouseEnter={handleMouseEnter}
