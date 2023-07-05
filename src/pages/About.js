@@ -43,7 +43,7 @@ const About = () => {
       <div className='flex flex-col lg:flex-row-2 items-center'>
         <div className='rounded-md xl:h-fit lg:w-3/5 lg:h-fit px-11 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-2 drop-shadow-2xl'>
           <img
-            className="mt-6 sm:w-2/4 lg:w-2/6 md:w-4/6 w-4/6 mx-auto mb-2 pt-1 object-cover object-center rounded-full shadow-2xl opacity-95"
+            className="mt-6 sm:w-2/4 lg:w-3/6 md:w-3/6 w-2/6 mx-auto mb-2 pt-1 object-cover object-center rounded-full shadow-2xl opacity-95"
             alt="aboutpic"
             src={AboutPic}
           />
