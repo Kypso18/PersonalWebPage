@@ -54,7 +54,7 @@ const ContactForm = () => {
     <div className="mb-4">
       <label className="block mb-1 font-medium text-white" htmlFor="email">Email</label>
       <input
-        className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none sm:w-full md:w-full lg:w-full xl:w-full 2xl:w-1/2"
+        className="w-full  px-3 py-2 border border-gray-300 rounded focus:outline-none sm:w-full md:w-full lg:w-full xl:w-full 2xl:w-1/2"
         type="email"
         id="email"
         value={email}

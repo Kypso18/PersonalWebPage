@@ -6,7 +6,7 @@ import 'swiper/swiper-bundle.css';
 // Import your photos and videos here
 import photo1 from '../assets/picv/Picv1 (1).jpeg';
 import photo2 from '../assets/picv/Picv1 (2).jpg';
-import photo3 from '../assets/picv/Picv1 (2).jpeg';
+import photo3 from '../assets/picv/KodegoGrad.png';
 import photo4 from '../assets/picv/Picv1 (3).jpg';
 import photo5 from '../assets/picv/Picv1 (3).jpeg';
 import photo6 from '../assets/picv/Dota2.jpg';

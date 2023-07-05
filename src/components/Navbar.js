@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import WebLogo from '../assets/WebportLogo.png';
 
 function NavItem({ to, children }) {
@@ -20,11 +20,23 @@ function NavItem({ to, children }) {
 }
 
 const Navbar = () => {
-  const [isMenuOpen, setMenuOpen] = React.useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleMenuToggle = () => {
     setMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const shouldShowDesktopMenu = windowWidth > 640;
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-blue-300/80 z-50">
@@ -33,13 +45,13 @@ const Navbar = () => {
           <div className="flex items-center">
             <img
               src={WebLogo}
-              alt='WebLogo'
-              className='object-contain hover:animate-pulse h-20 w-30'
+              alt="WebLogo"
+              className="object-contain hover:animate-pulse h-20 w-30"
             />
           </div>
 
           {/* Mobile menu button */}
-          <div className="flex -mr-2 sm:hidden">
+          <div className="flex mr-2 lg:hidden md:hidden">
             <button
               type="button"
               className="inline-flex items-center justify-center p-2 rounded-md text-white focus:outline-none"
@@ -72,39 +84,23 @@ const Navbar = () => {
           </div>
 
           {/* Desktop menu */}
-          <div className="hidden sm:flex sm:items-center">
-            <NavItem to='/'>
-              Home
-            </NavItem>
-            <NavItem to='/about'>
-              About
-            </NavItem>
-            <NavItem to="/blogs">
-              Blogs
-            </NavItem>
-            <NavItem to="/hireme">
-              Hire Me
-            </NavItem>
-          </div>
+          {shouldShowDesktopMenu && (
+            <div className="sm:flex sm:items-center">
+              <NavItem to="/">Home</NavItem>
+              <NavItem to="/about">About</NavItem>
+              <NavItem to="/blogs">Blogs</NavItem>
+            </div>
+          )}
         </div>
       </div>
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="sm:hidden bg-blue-300/80">
+        <div className="lg:hidden md:hidden bg-blue-300/80">
           <div className="flex flex-col px-4 pt-2 pb-2 space-y-1">
-            <NavItem to='/'>
-              Home
-            </NavItem>
-            <NavItem to='/about'>
-              About
-            </NavItem>
-            <NavItem to="/blogs">
-              Blogs
-            </NavItem>
-            <NavItem to="/hireme">
-              Hire Me
-            </NavItem>
+            <NavItem to="/">Home</NavItem>
+            <NavItem to="/about">About</NavItem>
+            <NavItem to="/blogs">Blogs</NavItem>
           </div>
         </div>
       )}

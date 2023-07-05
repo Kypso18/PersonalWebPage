@@ -5,7 +5,8 @@ import { FaEnvelope, FaPhone, FaGithub, FaViber, FaFacebookMessenger, FaTelegram
 import Divider from '../components/Divider';
 import MusicPlayOnHover from '../components/MusicPlayOnHover';
 import SwiperContainer from '../components/Swiper';
-import ReviewSection from '../components/ReviewSection';
+import ReviewSlider from '../components/ReviewSlider';
+import ContactForm from '../components/ContactForm';
 
 function Home() {
   const skills = [
@@ -38,6 +39,47 @@ function Home() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const reviews = [
+    {
+      picture: 'path/to/pic1.jpg',
+      name: 'John Doe',
+      opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: '4/5' ,
+    },
+    {
+      picture: 'path/to/pic1.jpg',
+      name: 'John Doe',
+      opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: '4/5' ,
+    },
+    {
+      picture: 'path/to/pic1.jpg',
+      name: 'John Doe',
+      opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: '4/5' ,
+    },
+    {
+      picture: 'path/to/pic1.jpg',
+      name: 'John Doe',
+      opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: '4/5' ,
+    },
+    {
+      picture: 'path/to/pic1.jpg',
+      name: 'John Doe',
+      opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: '4/5' ,
+    },
+    {
+      picture: 'path/to/pic1.jpg',
+      name: 'John Doe',
+      opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      text: '4/5' ,
+    },
+    
+    // Add more reviews as needed
+  ];
 
   return (
     <section
@@ -78,11 +120,11 @@ function Home() {
      
       <SwiperContainer />
       <Divider />
-      <div>  <h2 className="text-2xl font-bold mb-3 mt-7 text-center">Contact Details
+      <div>  <h2 className="text-2xl font-bold mb-3 mt-7 text-center">Reviews
       </h2></div>
      
       
-      <ReviewSection />.
+      <ReviewSlider reviews={reviews} />
       <Divider />
       <div className="contact container mx-auto py-2 px-8 my-auto">
         <h2 className="text-2xl font-bold mb-3 mt-7 text-center">Contact Details</h2>
@@ -99,7 +141,9 @@ function Home() {
             </a>
           </div>
           <div className="flex items-center space-x-2">
-            <FaPhone className="text-white" />
+          <h3 className="text-lg font-semibold text-center">
+          <FaPhone className="text-white" />
+          </h3>
             <a href="tel:+639055544025" className="text-white hover:underline">
               09055544025
             </a>
@@ -131,8 +175,13 @@ function Home() {
             </a>
           </div>
         </div>
+        <br></br>
+        <br></br>
       </div>
-      <br />
+      <Divider />
+      <br></br>
+      <br></br>
+      <ContactForm />
       {showScrollTop && (
         <div
           className="animate-bounce hover:bg-blue-400 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 fixed bottom-8 right-8 bg-white/50 text-gray-900 p-2 rounded-full cursor-pointer shadow"

@@ -43,7 +43,7 @@ const About = () => {
       <div className='flex flex-col lg:flex-row-2 items-center'>
         <div className='rounded-md xl:h-fit lg:w-3/5 lg:h-fit px-11 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-2 drop-shadow-2xl'>
           <img
-            className="mt-6 sm:w-2/4 lg:w-3/6 md:w-3/6 w-2/6 mx-auto mb-2 pt-1 object-cover object-center rounded-full shadow-2xl opacity-95"
+            className="mt-6 sm:w-2/4 lg:w-2/6 xl:w-2/6 md:w-2/6 w-3/6 mx-auto mb-2 pt-1 object-cover object-center rounded-full shadow-2xl opacity-95"
             alt="aboutpic"
             src={AboutPic}
           />
@@ -92,7 +92,7 @@ const About = () => {
         <Divider />
         <div className='rounded-md lg:mx-auto xl:mx-auto xl:h-fit lg:w-3/5 lg:h-fit px-11 bg-gray-300/60 shadow-lg mx-4 mt-2 drop-shadow-2xl'>
         <br></br>
-          <h2 className="text-2xl text-center lg:text-left font-bold mb-4 mt-4">Hobbies, Other Skills and More About Me...</h2>
+          <h2 className="text-2xl text-center lg:text-center font-bold mb-4 mt-4">Hobbies, Other Skills and More About Me...</h2>
         
         
           <p className="text-base text-center lg:text-left font-bold mb-1 text-gray-800 ">
@@ -124,22 +124,19 @@ const About = () => {
   <h2 className="text-2xl items-center text-center justify lg:text-center font-bold mb-3 ml-2 mt-3">Academic Background</h2>
 </div>
 
-<div className="px-6 my-auto items-center mx-auto xl:px-32">
+<div className="px-6 my-auto items-center mx-auto xl:px-80">
   <br />
-  <Timeline horizontal>
+  <Timeline className='xl:w-full' horizontal>
     <Timeline.Item>
       <div className="flex flex-col items-center">
-        <Timeline.Point icon={TbSchool} className='object-center xl: sm:w-3/4 mx-auto' />
+        <Timeline.Point icon={TbSchool} className='object-center  sm:w-3/4 mx-auto' />
         <br />
         <Timeline.Content className="mx-auto text-center">
-          <Timeline.Title>
+          <Timeline.Title className='text-white text-2xl'>
             Elementary School
-          </Timeline.Title>
-          <Timeline.Time>
-            Graduated in 2010
-          </Timeline.Time>
-          <Timeline.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </Timeline.Title >
+          <Timeline.Body className='text-white/90 text-lg'>
+            Pembo Elementary School
           </Timeline.Body>
         </Timeline.Content>
       </div>
@@ -149,14 +146,12 @@ const About = () => {
         <Timeline.Point icon={TbSchool} className='items-center object-center sm:w-3/4 mx-auto' />
         <br />
         <Timeline.Content className="ml-2 text-center">
-          <Timeline.Title>
+          <Timeline.Title className='text-white text-2xl'>
             High School
           </Timeline.Title>
-          <Timeline.Time>
-            Graduated in 2014
-          </Timeline.Time>
-          <Timeline.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          
+          <Timeline.Body className='text-white/90 text-lg'>
+           Benigno "Ninoy" S. Aquino High School
           </Timeline.Body>
         </Timeline.Content>
       </div>
@@ -166,14 +161,11 @@ const About = () => {
         <Timeline.Point icon={TbSchool} className='items-center object-center sm:w-3/4 mx-auto'/>
         <br />
         <Timeline.Content className="ml-2 text-center">
-          <Timeline.Title>
+          <Timeline.Title className='text-white text-2xl'>
             College
           </Timeline.Title>
-          <Timeline.Time>
-            Graduated in 2018
-          </Timeline.Time>
-          <Timeline.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <Timeline.Body className='text-white/90 text-lg'>
+            Rizal Technological University
           </Timeline.Body>
         </Timeline.Content>
       </div>
