@@ -25,7 +25,7 @@ import photo18 from '../assets/picv/Picv2 (6).jpg';
 import video1 from '../assets/picv/Vid1.mp4';
 import video2 from '../assets/picv/Vid2.mp4';
 import video3 from '../assets/picv/Vid3.mp4';
-import photo18 from '../assets/picv/Picv1 (4).jpeg';
+import photo19 from '../assets/picv/Picv1 (4).jpeg';
 
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination]);
