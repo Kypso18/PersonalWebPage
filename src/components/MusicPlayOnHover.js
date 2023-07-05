@@ -33,7 +33,7 @@ const MusicPlayOnHover = () => {
         <h1 className="my-4 text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold leading-tight">
           Skipper Matthew A. Paloma
         </h1>
-        <p className="text-base text-lg sm:text-lg md:text-2xl lg:text-2xl mb-8">Front-end Developer</p>
+        <p className="text-base sm:text-lg md:text-2xl lg:text-2xl mb-8">Front-end Developer</p>
         <DownloadButton />
         <p className="mt-6 items-center text-center l
          text-white/60 text-xl font-bold ">

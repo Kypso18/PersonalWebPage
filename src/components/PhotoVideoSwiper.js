@@ -9,7 +9,7 @@ import photo2 from '../assets/picv/Picv1 (2).jpg';
 import photo3 from '../assets/picv/Picv1 (2).jpeg';
 import photo4 from '../assets/picv/Picv1 (3).jpg';
 import photo5 from '../assets/picv/Picv1 (3).jpeg';
-import photo6 from '../assets/picv/Picv1 (4).jpeg';
+import photo6 from '../assets/picv/Dota2.jpg';
 import photo7 from '../assets/picv/Picv1 (4).jpg';
 import photo8 from '../assets/picv/Picv1 (5).jpeg';
 import photo9 from '../assets/picv/Picv1 (5).jpg';
@@ -25,6 +25,7 @@ import photo18 from '../assets/picv/Picv2 (6).jpg';
 import video1 from '../assets/picv/Vid1.mp4';
 import video2 from '../assets/picv/Vid2.mp4';
 import video3 from '../assets/picv/Vid3.mp4';
+import photo18 from '../assets/picv/Picv1 (4).jpeg';
 
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination]);
@@ -114,6 +115,10 @@ const PhotoVideoSwiper = () => {
     {
       id: 21,
       image: photo18,
+    },
+    {
+      id: 22,
+      image: photo19,
     },
   ];
 
