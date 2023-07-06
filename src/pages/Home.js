@@ -7,6 +7,8 @@ import MusicPlayOnHover from '../components/MusicPlayOnHover';
 import SwiperContainer from '../components/Swiper';
 import ReviewSlider from '../components/ReviewSlider';
 import ContactForm from '../components/ContactForm';
+import Drei from '../assets/reviews/drei.jpg';
+import Adas from '../assets/reviews/Adas.jpg';
 
 function Home() {
   const skills = [
@@ -42,16 +44,16 @@ function Home() {
 
   const reviews = [
     {
-      picture: 'path/to/pic1.jpg',
-      name: 'John Doe',
-      opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      text: '4/5' ,
+      picture: Drei,
+      name: 'Meldred Loreto',
+      opinion: 'Skipper is a very cooperative and collaborative teammate. He is confident of his suggestions and ideas but is always open for corrections if necessary. He is someone I would like to work with again in the future.',
+      text: '5/5' ,
     },
     {
-      picture: 'path/to/pic1.jpg',
-      name: 'John Doe',
-      opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      text: '4/5' ,
+      picture: Adas,
+      name: 'Mahdi Adas S. Adad',
+      opinion: 'He is good friend we learned a lot from each other, I wish for him all best',
+      text: '5/5' ,
     },
     {
       picture: 'path/to/pic1.jpg',
@@ -95,13 +97,13 @@ function Home() {
       <Divider />
  
     
-      <div className="py-10 px-9 topskills">
+      <div className="py-10 px-6 topskills">
   <h2 className="text-2xl text-center font-bold mb-4">My Top Skills</h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2">
+  <div className="grid px-16 grid-cols sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 gap-2">
     {skills.map((skill, index) => (
       <div
         key={index}
-        className="group flex items-center p-4 bg-grey-300/60 rounded shadow hover:bg-white w-full"
+        className="group flex items-center px-8 py-4 bg-grey-300/60 rounded shadow hover:bg-white w-full"
       >
         <div className="text-2xl text-white group-hover:text-black mr-4 pl-2">{skill.icon}</div>
         <div>

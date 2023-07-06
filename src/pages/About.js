@@ -67,7 +67,7 @@ const About = () => {
             
           </div>
           {showModal && (
-            <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-black bg-opacity-90">
+            <div className="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-black bg-opacity-90 rounded">
               <div className="bg-grey-300/60 p-6 mx-1 md:mx-0 rounded shadow-lg max-h-screen overflow-y-auto">
                 <p className="text-base font-bold mb-4 px-4">
                   &nbsp; &nbsp;My commitment to personal growth is reflected in my educational accomplishments. I hold a Diploma in Industrial Engineering Technology from Rizal Technological University, where I gained a strong foundation in problem-solving and critical thinking. Furthermore, I have obtained certifications such as Lean Six Sigma Yellow Belt, Google Certificates in Project Management and Data Analytics, and TESDA NCII in Consumer Electronics.

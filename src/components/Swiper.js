@@ -19,7 +19,7 @@ const SwiperContainer = () => {
         <br></br>
         <br></br>
         <Swiper
-  spaceBetween={5}
+  spaceBetween={1}
   navigation
   pagination={{ clickable: true }}
   breakpoints={{
@@ -29,21 +29,22 @@ const SwiperContainer = () => {
     },
     // When window width is >= 768px
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     // When window width is >= 1024px
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
   }}
 >
 
         {projects.map((project, index) => (
-          <SwiperSlide className='mb-10' key={index}>
-            <div className="max-w-md mx-24 shadow-lg px-auto">
-              <img src={project.coverPhoto} alt={project.title} className="w-fit py-2" />
+          <SwiperSlide className='px-10  mb-10 mx-auto flex justify-center' key={index}>
+            <div className="rounded-lg px-10 items-center shadow">
+            <h2 className="text-2xl text-center font-bold mb-2">{project.title}</h2>
+              <img src={project.coverPhoto} alt={project.title} className="w-42 h-fit py-2" />
               <div className="p-3">
-                <h2 className="text-xl font-bold mb-2">{project.title}</h2>
+                <h2 className="text-lg mb-2">{project.description}</h2>
                 <a
                   href={project.redirectionLink}
                   className="inline-block bg-blue-500/60 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
