@@ -42,7 +42,7 @@ const SwiperContainer = () => {
           <SwiperSlide className='px-10  mb-10 mx-auto flex justify-center' key={index}>
             <div className="rounded-lg px-10 items-center shadow">
             <h2 className="text-2xl text-center font-bold mb-2">{project.title}</h2>
-              <img src={project.coverPhoto} alt={project.title} className="w-42 h-fit py-2" />
+              <img src={project.coverPhoto} alt={project.title} className="w-50 h-fit py-2" />
               <div className="p-3">
                 <h2 className="text-lg mb-2">{project.description}</h2>
                 <a

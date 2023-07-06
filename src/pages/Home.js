@@ -122,8 +122,7 @@ function Home() {
      
       <SwiperContainer />
       <Divider />
-      <div>  <h2 className="text-2xl font-bold mb-3 mt-7 text-center">Reviews
-      </h2></div>
+      
      
       
       <ReviewSlider reviews={reviews} />

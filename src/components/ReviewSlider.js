@@ -7,6 +7,10 @@ import { FaHeart} from 'react-icons/fa';
 
 const ReviewSlider = ({ reviews }) => {
   return (
+    <div className="container mx-auto my-4 py-18 px-8">
+     <h2 className="text-2xl font-bold mb-3 mt-7 text-center">Reviews</h2>
+    <br></br>
+    <br></br>
     <Swiper
       slidesPerView={1}
       navigation
@@ -27,8 +31,8 @@ const ReviewSlider = ({ reviews }) => {
       }}
     >
       {reviews.map((review, index) => (
-        <SwiperSlide key={index} className="px-10  mb-10 mx-auto flex justify-center">
-          <div className="rounded-lg px-10 items-center shadow">
+        <SwiperSlide key={index} className="px-10 mb-10 mx-auto flex justify-center">
+          <div className="rounded-lg px-auto items-center shadow">
             <img
               src={review.picture}
               alt={`Review by ${review.name}`}
@@ -44,6 +48,7 @@ const ReviewSlider = ({ reviews }) => {
         </SwiperSlide>
       ))}
     </Swiper>
+    </div>
   );
 };
 
