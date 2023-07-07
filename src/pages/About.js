@@ -52,10 +52,10 @@ const About = () => {
             &nbsp; &nbsp; Allow me to introduce myself. I am a passionate individual with a knack for problem-solving and effective communication. With a diverse range of experiences and a thirst for knowledge, I strive to make a positive impact in both my professional and personal life.
           </p>
           <p className="text-base text-center lg:text-left font-bold mb-1 text-gray-800 px-3">
-            &nbsp; &nbsp; In my previous roles, I gained valuable skills and certifications that have shaped my professional journey. As a Marketing Intern at Figaro Coffee Company, I excelled in managing inventory, organizing marketing materials, and ensuring customer satisfaction through empathetic support. Additionally, as a Customer Service Representative at Harte Hanks, I honed my abilities to address billing concerns and provide technical assistance, all while maintaining a focus on fraud prevention and account security.
+            &nbsp; &nbsp; In my previous roles, I gained valuable skills and certifications that have shaped my professional journey. As a Marketing Intern at Figaro Coffee Company, I excelled in managing inventory of marketing materials and helping produce social media contents. Additionally, as a Customer Service Representative at Harte Hanks, I honed my abilities to address billing concerns and provide technical assistance, all while maintaining a focus on fraud prevention and account security.
           </p>
           <p className="text-base text-center lg:text-left font-bold mb-1 text-gray-800 px-3">
-            &nbsp; &nbsp; Beyond my professional endeavors, I have actively contributed to my community as a volunteer and leader. Serving as the Vice President for Development at Core PH and Project Manager at IET Society at RTU, I developed and executed strategies for leadership events, fostering an environment of learning and enjoyment. My ability to analyze situations, empathize with others, and multitask efficiently has greatly aided me in these roles.
+            &nbsp; &nbsp; Beyond my professional endeavors, I have actively contributed to my community as a volunteer and leader. Serving as the Vice President for Development at Core PH (NGO) and Project Manager at IET Society at RTU, I developed and executed strategies for leadership events, fostering an environment of learning and enjoyment. My ability to analyze situations, empathize with others, and multitask efficiently has greatly aided me in these roles.
           </p>
           <div className="text-center pb-1" onClick={toggleModal}>
             <button className="text-black/60 font-bold py-1 px-4 mt-1 rounded underline">
@@ -89,7 +89,11 @@ const About = () => {
           )}
         </div>
         </div>
+        
+    
         <Divider />
+        
+      
         <div className='rounded-md lg:mx-auto xl:mx-auto xl:h-fit lg:w-3/5 lg:h-fit px-11 bg-gray-300/60 shadow-lg mx-4 mt-2 drop-shadow-2xl'>
         <br></br>
           <h2 className="text-2xl text-center lg:text-center font-bold mb-4 mt-4">Hobbies, Other Skills and More About Me...</h2>

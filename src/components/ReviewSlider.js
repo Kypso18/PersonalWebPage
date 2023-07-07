@@ -5,6 +5,8 @@ import 'swiper/css/navigation';
 import { FaHeart} from 'react-icons/fa';
 
 
+
+
 const ReviewSlider = ({ reviews }) => {
   return (
     <div className="container mx-auto my-4 py-18 px-8">
@@ -32,7 +34,8 @@ const ReviewSlider = ({ reviews }) => {
     >
       {reviews.map((review, index) => (
         <SwiperSlide key={index} className="px-10 mb-10 mx-auto flex justify-center">
-          <div className="rounded-lg px-auto items-center shadow">
+          <div className="rounded-lg px-10 items-center shadow">
+         
             <img
               src={review.picture}
               alt={`Review by ${review.name}`}

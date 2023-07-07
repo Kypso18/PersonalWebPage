@@ -105,6 +105,7 @@ function Home() {
         key={index}
         className="group flex items-center px-8 py-4 bg-grey-300/60 rounded shadow hover:bg-white w-full"
       >
+         
         <div className="text-2xl text-white group-hover:text-black mr-4 pl-2">{skill.icon}</div>
         <div>
           <h3 className="font-medium text-white group-hover:text-black">{skill.name}</h3>

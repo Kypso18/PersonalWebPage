@@ -63,7 +63,7 @@ const CertificateSwiper = () => {
         },
         // When window width is >= 768px
         768: {
-          slidesPerView: 1,
+          slidesPerView: 2,
         },
         // When window width is >= 1024px
         1024: {
