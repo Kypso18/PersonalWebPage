@@ -13,7 +13,7 @@ const projects = [
     coverPhoto: Proj2,
     git: 'https://github.com/marcusdavidalo/GameLink',
     title: 'Capstone: PlayKoDEX',
-    description: 'A team project required by KodeGo to graduate their Fullstack Development Bootcamp.',
+    description: 'A team project wherein we utilized MERN to pass the required research by KodeGo to graduate their Fullstack Development Bootcamp.',
     
   },
  

@@ -125,20 +125,19 @@ const PhotoVideoSwiper = () => {
   return (
     <div className="container mx-auto px-9">
       <Swiper
-        navigation
         pagination={{ clickable: true }}
         slidesPerView={1}
         spaceBetween={10}
 
       >
         {photovideo.map((item) => (
-          <SwiperSlide className="mb-2" key={item.id}>
-            <div className="flex justify-center mb-8">
-              <div className="py-12 px-12 h-96">
+          <SwiperSlide className="pt-20" key={item.id}>
+            
+              <div className="px-12 mx-auto">
                 {item.video ? (
                   <video
                     controls
-                    className="object-contain h-full max-w-full rounded-lg shadow-xl dark:shadow-gray-800 cursor-pointer"
+                    className="object-contain h-auto max-w-full rounded-lg shadow-xl dark:shadow-gray-800 mx-auto"
                   >
                     <source src={item.video} type="video/mp4" />
                   </video>
@@ -146,11 +145,11 @@ const PhotoVideoSwiper = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="object-contain h-full max-w-full rounded-lg shadow-xl dark:shadow-gray-800 cursor-pointer"
+                    className="object-contain h-auto max-w-full rounded-lg shadow-xl dark:shadow-gray-800 mx-auto"
                   />
                 )}
               </div>
-            </div>
+            
           </SwiperSlide>
         ))}
       </Swiper>

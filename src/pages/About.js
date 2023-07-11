@@ -98,21 +98,22 @@ const About = () => {
         
     
         <Divider />
-        
-        <div className="container vsm:mx-auto px-4 py-8">
-  <h2 className="text-lg md:text-lg lg:text-xl items-center text-center justify lg:text-center font-bold mb-3 ml-2 mt-3">Academic Background</h2>
+        <div className='flex flex-col items-center'>
+        <div className='rounded-md xl:h-fit lg:h-fit w-3/4 px-10 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-2 drop-shadow-2xl'>
+      
+  <h2 className="text-2xl text-center lg:text-center font-bold mt-4">Academic Background</h2>
   <div className="container mx-auto px-4 py-8">
     <div className="flex justify-center mx-10 px-auto">
-      <div className="timeline flex flex-row">
+      <div className="timeline flex flex-row mx-auto px-auto">
         {timelineData.map((item) => (
           <div className="timeline-item items-center text-center flex-1" key={item.id}>
             <div className="timeline-icon flex items-center justify-center">
               <FaSchool className="text-3xl" />
             </div>
             <div className="timeline-content">
-              <h2 className="text-sm sm:text-lg md:text-xl lg:text-xl font-bold mb-1">{item.school}</h2>
-              <h3 className="text-md md:text-lg lg:text-lg font-semibold mb-2">{item.title}</h3>
-              <p className="text-sm md:text-base lg:text-lg text-gray-400 mb-2">
+              <h2 className="text-sm sm:text-md md:text-lg lg:text-lg font-bold mb-1 text-black/60">{item.school}</h2>
+              <h3 className="text-md md:text-md lg:text-lg font-semibold mb-2">{item.title}</h3>
+              <p className="text-sm md:text-base lg:text-lg text-black mb-2">
                 <MdDateRange className="inline-block mr-2" />
                 {item.year}
               </p>
@@ -122,6 +123,7 @@ const About = () => {
       </div>
     </div>
   </div>
+</div>
 </div>
 
       <Divider />

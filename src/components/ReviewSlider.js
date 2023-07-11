@@ -24,7 +24,7 @@ const ReviewSlider = ({ reviews }) => {
         },
         // When window width is >= 768px
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         // When window width is >= 1024px
         1024: {

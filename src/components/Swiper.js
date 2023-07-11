@@ -29,7 +29,7 @@ const SwiperContainer = () => {
           },
           // When window width is >= 768px
           768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
           // When window width is >= 1024px
           1024: {
@@ -40,10 +40,9 @@ const SwiperContainer = () => {
         {projects.map((project, index) => (
           <SwiperSlide className="px-10  mb-10 mx-auto flex justify-center" key={index}>
             <div className="rounded-lg px-10 items-center shadow">
-              <h2 className="text-lg lg:text-xl text-center font-bold mb-2">{project.title}</h2>
-              <div className='py-12 px-12 h-96 flex items-center'>
-              <img src={project.coverPhoto} alt={project.title} className="object-contain h-full max-w-full rounded-lg shadow-xl dark:shadow-gray-800" />
-              </div>
+              <h2 className="text-lg lg:text-xl text-center font-bold mb-4">{project.title}</h2>
+              <img src={project.coverPhoto} alt={project.title} className="object-contain h-full max-w-full rounded-lg shadow-xl dark:shadow-gray-800 mx-auto" />
+            
               <div className="p-3">
                 <h2 className="text-md text-center mb-4">{project.description}</h2>
                 <div className="flex justify-center">
