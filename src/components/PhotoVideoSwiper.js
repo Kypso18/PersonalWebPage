@@ -131,7 +131,7 @@ const PhotoVideoSwiper = () => {
 
       >
         {photovideo.map((item) => (
-          <SwiperSlide className="pt-20" key={item.id}>
+          <SwiperSlide className="pt-20 pb-10" key={item.id}>
             
               <div className="px-12 mx-auto">
                 {item.video ? (
