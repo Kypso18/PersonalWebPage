@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Timeline } from 'flowbite-react';
-import { TbSchool } from "react-icons/tb";
 import Divider from '../components/Divider';
 import CertificateSwiper from '../components/CertificateSwiper';
-import { FaArrowUp } from 'react-icons/fa';
+import { FaArrowUp, FaSchool  } from 'react-icons/fa';
+import { MdDateRange } from 'react-icons/md';
 import AboutPic from '../assets/AboutPic.jpg';
 import { BsChevronDoubleDown } from 'react-icons/bs';
 import '../pages/About.css';
@@ -33,6 +32,13 @@ const About = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const timelineData = [
+    { id: 1, school: 'Pembo Elementary school', title: 'Elementary School', year: '2006 - 2011' },
+    { id: 2, school: 'Benignoo "Ninoy" S. Aquino High School ', title: 'High School', year: '2012 - 2015' },
+    { id: 3, school: 'Rizal Technological University', title: 'College', year: '2015 - Present' }
+  ];
+  
+
   return (
     <section className="w-auto h-full text-white" style={{
       background: "linear-gradient(90deg, rgba(131, 126, 226, 0.55) 24%, rgba(114, 114, 226, 0.55) 58%, rgba(0, 212, 255, 0.55) 100%)"
@@ -47,7 +53,7 @@ const About = () => {
             alt="aboutpic"
             src={AboutPic}
           />
-          <h2 className="text-2xl text-center lg:text-center font-bold mb-1">&nbsp; About Me</h2>
+          <h2 className="text-2xl text-center lg:text-center font-bold mb-1">&nbsp; About me</h2>
           <p className="text-base text-center lg:text-left font-bold mb-1 text-gray-800 px-3">
             &nbsp; &nbsp; Allow me to introduce myself. I am a passionate individual with a knack for problem-solving and effective communication. With a diverse range of experiences and a thirst for knowledge, I strive to make a positive impact in both my professional and personal life.
           </p>
@@ -93,10 +99,35 @@ const About = () => {
     
         <Divider />
         
+        <div className="container mx-auto px-4 py-8">
+<h2 className="text-xl md:text-2xl lg:text-2xl items-center text-center justify lg:text-center font-bold mb-3 ml-2 mt-3">Academic Background</h2>
+<div className="container mx-auto px-4 py-8">
+      <div className="flex justify-center">
+        <div className="timeline">
+          {timelineData.map((item) => (
+            <div className="timeline-item items-center text-center" key={item.id}>
+              <div className="timeline-icon flex items-center justify-center">
+                <FaSchool className="text-4xl" />
+              </div>
+              <div className="timeline-content">
+                <h2 className="text-xl md:text-2xl lg:text-2xl font-bold mb-1">{item.school}</h2>
+                <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">{item.title}</h3>
+                <p className="text-sm md:text-base lg:text-lg text-grey-400 mb-2">
+                  <MdDateRange className="inline-block mr-2" />
+                  {item.year}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+      </div>
+      <Divider />
       
         <div className='rounded-md lg:mx-auto xl:mx-auto xl:h-fit lg:w-3/5 lg:h-fit px-11 bg-gray-300/60 shadow-lg mx-4 mt-2 drop-shadow-2xl'>
         <br></br>
-          <h2 className="text-2xl text-center lg:text-center font-bold mb-4 mt-4">Hobbies, Other Skills and More About Me...</h2>
+          <h2 className="text-2xl text-center lg:text-center font-bold mb-4 mt-4">Hobbies, other skills and more about me...</h2>
         
         
           <p className="text-base text-center lg:text-left font-bold mb-1 text-gray-800 ">
@@ -121,67 +152,8 @@ const About = () => {
 
         
         
-        <Divider />
-        <br></br>
-        <div className='lg:w-100 px-10'>
-        <div>
-  <h2 className="text-2xl items-center text-center justify lg:text-center font-bold mb-3 ml-2 mt-3">Academic Background</h2>
-</div>
-
-<div className="px-6 my-auto items-center mx-auto xl:px-80">
-  <br />
-  <Timeline className='xl:w-full' horizontal>
-    <Timeline.Item>
-      <div className="flex flex-col items-center">
-        <Timeline.Point icon={TbSchool} className='object-center  sm:w-3/4 mx-auto' />
-        <br />
-        <Timeline.Content className="mx-auto text-center">
-          <Timeline.Title className='text-white text-2xl'>
-            Elementary School
-          </Timeline.Title >
-          <Timeline.Body className='text-white/90 text-lg'>
-            Pembo Elementary School
-          </Timeline.Body>
-        </Timeline.Content>
-      </div>
-    </Timeline.Item>
-    <Timeline.Item>
-      <div className="flex flex-col items-center">
-        <Timeline.Point icon={TbSchool} className='items-center object-center sm:w-3/4 mx-auto' />
-        <br />
-        <Timeline.Content className="ml-2 text-center">
-          <Timeline.Title className='text-white text-2xl'>
-            High School
-          </Timeline.Title>
-          
-          <Timeline.Body className='text-white/90 text-lg'>
-           Benigno "Ninoy" S. Aquino High School
-          </Timeline.Body>
-        </Timeline.Content>
-      </div>
-    </Timeline.Item>
-    <Timeline.Item>
-      <div className="flex flex-col items-center">
-        <Timeline.Point icon={TbSchool} className='items-center object-center sm:w-3/4 mx-auto'/>
-        <br />
-        <Timeline.Content className="ml-2 text-center">
-          <Timeline.Title className='text-white text-2xl'>
-            College
-          </Timeline.Title>
-          <Timeline.Body className='text-white/90 text-lg'>
-            Rizal Technological University
-          </Timeline.Body>
-        </Timeline.Content>
-      </div>
-    </Timeline.Item>
-  </Timeline>
-</div>
-
-
-
-
-
-      </div>
+    
+        
 
       <Divider />
 
