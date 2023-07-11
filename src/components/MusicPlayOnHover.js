@@ -32,7 +32,7 @@ const MusicPlayOnHover = () => {
       <div className="text-center py-2 lg:w-6/12 w-full">
       <p className="items-center text-center 
          text-white/60 text-xl font-bold ">
-  Hover Over Me </p>
+  Hover over me </p>
         <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-4xl font-bold leading-tight">
           Skipper Matthew A. Paloma
         </h1>

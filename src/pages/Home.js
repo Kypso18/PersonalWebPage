@@ -10,6 +10,7 @@ import ContactForm from '../components/ContactForm';
 import Drei from '../assets/reviews/drei.jpg';
 import Adas from '../assets/reviews/Adas.jpg';
 
+
 function Home() {
   const skills = [
     { name: 'HTML', icon: <FaHtml5 />, level: 'Novice' },
@@ -82,6 +83,10 @@ function Home() {
     
     // Add more reviews as needed
   ];
+  
+  
+  
+  
 
   return (
     <section
@@ -98,7 +103,7 @@ function Home() {
  
     
       <div className="py-10 px-6 topskills">
-  <h2 className="text-2xl text-center font-bold mb-4">My Top Skills</h2>
+  <h2 className="text-2xl text-center font-bold mb-4">My Skills</h2>
   <div className="grid px-16 grid-cols sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 gap-2">
     {skills.map((skill, index) => (
       <div
@@ -119,6 +124,8 @@ function Home() {
      
 
      
+    
+    
       <Divider />
      
       <SwiperContainer />

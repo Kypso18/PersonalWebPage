@@ -88,7 +88,7 @@ const Navbar = () => {
             <div className="sm:flex sm:items-center">
               <NavItem to="/">Home</NavItem>
               <NavItem to="/about">About</NavItem>
-              <NavItem to="/blogs">Blogs</NavItem>
+              
             </div>
           )}
         </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
           <div className="flex flex-col px-4 pt-2 pb-2 space-y-1">
             <NavItem to="/">Home</NavItem>
             <NavItem to="/about">About</NavItem>
-            <NavItem to="/blogs">Blogs</NavItem>
+            
           </div>
         </div>
       )}
