@@ -18,7 +18,7 @@ const DownloadButton = () => {
         onClick={handleDownload}
       >
       <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} />
-        Get my Resume/CV
+        Get my Resume
       </button>
     </div>
   );

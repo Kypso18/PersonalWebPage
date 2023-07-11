@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Divider from '../components/Divider';
-import CertificateSwiper from '../components/CertificateSwiper';
 import { FaArrowUp, FaSchool  } from 'react-icons/fa';
 import { MdDateRange } from 'react-icons/md';
 import AboutPic from '../assets/AboutPic.jpg';
 import { BsChevronDoubleDown } from 'react-icons/bs';
 import '../pages/About.css';
-import PhotoVideoSwiper from '../components/PhotoVideoSwiper'
+import PhotoVideoSwiper from '../components/PhotoVideoSwiper';
+import Blogs from '../components/Blogs';
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
@@ -34,8 +34,8 @@ const About = () => {
 
   const timelineData = [
     { id: 1, school: 'Pembo Elementary school', title: 'Elementary School', year: '2006 - 2011' },
-    { id: 2, school: 'Benignoo "Ninoy" S. Aquino High School ', title: 'High School', year: '2012 - 2015' },
-    { id: 3, school: 'Rizal Technological University', title: 'College', year: '2015 - Present' }
+    { id: 2, school: 'Benigno "Ninoy" S. Aquino High School ', title: 'High School', year: '2012 - 2015' },
+    { id: 3, school: 'Rizal Technological University', title: 'College-BS in Industrial Engineering', year: '2015 - Present' }
   ];
   
 
@@ -46,8 +46,8 @@ const About = () => {
       <br />
       <br />
       <br />
-      <div className='flex flex-col lg:flex-row-2 items-center'>
-        <div className='rounded-md xl:h-fit lg:w-3/5 lg:h-fit px-11 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-2 drop-shadow-2xl'>
+      <div className='flex flex-col items-center'>
+        <div className='rounded-md xl:h-fit lg:h-fit w-3/4 px-10 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-2 drop-shadow-2xl'>
           <img
             className="mt-6 sm:w-2/4 lg:w-2/6 xl:w-2/6 md:w-2/6 w-3/6 mx-auto mb-2 pt-1 object-cover object-center rounded-full shadow-2xl opacity-95"
             alt="aboutpic"
@@ -85,7 +85,7 @@ const About = () => {
                   &nbsp; &nbsp;In summary, I am a friendly and intelligent individual with a passion for continuous learning and making a difference. I bring a combination of technical expertise, interpersonal skills, and leadership abilities to every endeavor I undertake. I firmly believe that productive conversations start with listening, and I am excited to contribute my unique skill set to future opportunities.
                 </p>
                 <button
-                  className="text-white bg-gray-300/40 py-1 px-4 mx-auto rounded mt-4 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                  className="text-white bg-gray-300/30 py-1 px-4 mx-auto rounded mt-4 hover:underline transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                   onClick={toggleModal}
                 >
                   Close
@@ -99,33 +99,34 @@ const About = () => {
     
         <Divider />
         
-        <div className="container mx-auto px-4 py-8">
-<h2 className="text-xl md:text-2xl lg:text-2xl items-center text-center justify lg:text-center font-bold mb-3 ml-2 mt-3">Academic Background</h2>
-<div className="container mx-auto px-4 py-8">
-      <div className="flex justify-center">
-        <div className="timeline">
-          {timelineData.map((item) => (
-            <div className="timeline-item items-center text-center" key={item.id}>
-              <div className="timeline-icon flex items-center justify-center">
-                <FaSchool className="text-4xl" />
-              </div>
-              <div className="timeline-content">
-                <h2 className="text-xl md:text-2xl lg:text-2xl font-bold mb-1">{item.school}</h2>
-                <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-sm md:text-base lg:text-lg text-grey-400 mb-2">
-                  <MdDateRange className="inline-block mr-2" />
-                  {item.year}
-                </p>
-              </div>
+        <div className="container vsm:mx-auto px-4 py-8">
+  <h2 className="text-lg md:text-lg lg:text-xl items-center text-center justify lg:text-center font-bold mb-3 ml-2 mt-3">Academic Background</h2>
+  <div className="container mx-auto px-4 py-8">
+    <div className="flex justify-center mx-10 px-auto">
+      <div className="timeline flex flex-row">
+        {timelineData.map((item) => (
+          <div className="timeline-item items-center text-center flex-1" key={item.id}>
+            <div className="timeline-icon flex items-center justify-center">
+              <FaSchool className="text-3xl" />
             </div>
-          ))}
-        </div>
+            <div className="timeline-content">
+              <h2 className="text-sm sm:text-lg md:text-xl lg:text-xl font-bold mb-1">{item.school}</h2>
+              <h3 className="text-md md:text-lg lg:text-lg font-semibold mb-2">{item.title}</h3>
+              <p className="text-sm md:text-base lg:text-lg text-gray-400 mb-2">
+                <MdDateRange className="inline-block mr-2" />
+                {item.year}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
-      </div>
+  </div>
+</div>
+
       <Divider />
-      
-        <div className='rounded-md lg:mx-auto xl:mx-auto xl:h-fit lg:w-3/5 lg:h-fit px-11 bg-gray-300/60 shadow-lg mx-4 mt-2 drop-shadow-2xl'>
+      <div className='flex flex-col items-center'>
+        <div className='rounded-md xl:h-fit lg:h-fit w-3/4 px-10 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-2 drop-shadow-2xl'>
         <br></br>
           <h2 className="text-2xl text-center lg:text-center font-bold mb-4 mt-4">Hobbies, other skills and more about me...</h2>
         
@@ -149,23 +150,19 @@ const About = () => {
  
        
         </div>
+        </div>
+        <br></br>
+        <br></br>
+        <Divider />
+        <Blogs />
+         <br></br>
 
         
         
     
         
 
-      <Divider />
-
-      <br />
-
-      <div>
-        <h2 className="text-2xl text-center font-bold">My Certificates</h2>
-        <CertificateSwiper />
-      </div>
-
-      <br />
-      <br />
+      
 
       {showScrollTop && (
         <div

@@ -7,6 +7,7 @@ import MusicPlayOnHover from '../components/MusicPlayOnHover';
 import SwiperContainer from '../components/Swiper';
 import ReviewSlider from '../components/ReviewSlider';
 import ContactForm from '../components/ContactForm';
+import CertificateSwiper from '../components/CertificateSwiper';
 import Drei from '../assets/reviews/drei.jpg';
 import Adas from '../assets/reviews/Adas.jpg';
 
@@ -56,32 +57,7 @@ function Home() {
       opinion: 'He is good friend we learned a lot from each other, I wish for him all best',
       text: '5/5' ,
     },
-    {
-      picture: 'path/to/pic1.jpg',
-      name: 'John Doe',
-      opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      text: '4/5' ,
-    },
-    {
-      picture: 'path/to/pic1.jpg',
-      name: 'John Doe',
-      opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      text: '4/5' ,
-    },
-    {
-      picture: 'path/to/pic1.jpg',
-      name: 'John Doe',
-      opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      text: '4/5' ,
-    },
-    {
-      picture: 'path/to/pic1.jpg',
-      name: 'John Doe',
-      opinion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      text: '4/5' ,
-    },
-    
-    // Add more reviews as needed
+  
   ];
   
   
@@ -131,8 +107,18 @@ function Home() {
       <SwiperContainer />
       <Divider />
       
+      <br />
+
+<div>
+  <h2 className="text-2xl text-center font-bold">My Certificates</h2>
+  <CertificateSwiper />
+</div>
+
+
      
+      <Divider />
       
+
       <ReviewSlider reviews={reviews} />
       <Divider />
       <div className="contact container mx-auto py-2 px-8 my-auto">

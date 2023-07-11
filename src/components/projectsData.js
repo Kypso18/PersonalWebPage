@@ -1,31 +1,22 @@
-import Cert1 from '../assets/certs/Cert1.jpg';
+import Proj1 from '../assets/proj/Project1.png';
+import Proj2 from '../assets/proj/Project2.png';
 
 const projects = [
   {
-    coverPhoto: Cert1,
-    title: 'Project 1',
-    description: 'lorem ipsum d',
-    redirectionLink: 'https://example.com/project1',
+    coverPhoto: Proj1,
+    git: 'https://github.com/Kypso18/Pet_project1',
+    title: 'School Enrollment Tracker',
+    description: 'This is a pet project aimed at my school department as an act of digitilization using Javascript on Appscript.',
+    
   },
   {
-    coverPhoto: 'project2.jpg',
-    title: 'Project 2',
-    description: 'lorem ipsum d',
-    redirectionLink: 'https://example.com/project2',
+    coverPhoto: Proj2,
+    git: 'https://github.com/marcusdavidalo/GameLink',
+    title: 'Capstone: PlayKoDEX',
+    description: 'A team project required by KodeGo to graduate their Fullstack Development Bootcamp.',
+    
   },
-  // Add more projects here...
-  {
-    coverPhoto: 'project3.jpg',
-    title: 'Project 3',
-    description: 'lorem ipsum d',
-    redirectionLink: 'https://example.com/project3',
-  },
-  {
-    coverPhoto: 'project4.jpg',
-    title: 'Project 4',
-    description: 'lorem ipsum d',
-    redirectionLink: 'https://example.com/project4',
-  },
+ 
 ];
 
 export default projects;

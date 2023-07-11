@@ -78,7 +78,7 @@ const CertificateSwiper = () => {
              <img
                src={certificate.image}
                alt={certificate.title}
-               className="object-contain h-full max-w-full rounded-lg shadow-xl dark:shadow-gray-800 cursor-pointer"
+               className="object-contain h-full max-w-full rounded-lg shadow-xl dark:shadow-gray-800"
              />
            </div>
          </div>
