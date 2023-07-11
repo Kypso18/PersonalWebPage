@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import WebLogo from '../assets/WebportLogo.png';
+import { Link } from 'react-router-dom';
 
 function NavItem({ to, children }) {
   return (
@@ -43,11 +44,15 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <img
-              src={WebLogo}
-              alt="WebLogo"
-              className="object-contain hover:animate-pulse h-20 w-30"
-            />
+          
+      <Link to="/">
+        <img
+          src={WebLogo}
+          alt="WebLogo"
+          className="object-contain hover:animate-pulse h-20 w-30"
+        />
+      </Link>
+    
           </div>
 
           {/* Mobile menu button */}

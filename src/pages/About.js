@@ -5,8 +5,10 @@ import { MdDateRange } from 'react-icons/md';
 import AboutPic from '../assets/AboutPic.jpg';
 import { BsChevronDoubleDown } from 'react-icons/bs';
 import '../pages/About.css';
-import PhotoVideoSwiper from '../components/PhotoVideoSwiper';
 import Blogs from '../components/Blogs';
+
+
+
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
@@ -37,6 +39,8 @@ const About = () => {
     { id: 2, school: 'Benigno "Ninoy" S. Aquino High School ', title: 'High School', year: '2012 - 2015' },
     { id: 3, school: 'Rizal Technological University', title: 'College-BS in Industrial Engineering', year: '2015 - Present' }
   ];
+
+
   
 
   return (
@@ -128,7 +132,7 @@ const About = () => {
 
       <Divider />
       <div className='flex flex-col items-center'>
-        <div className='rounded-md xl:h-fit lg:h-fit w-3/4 px-10 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-2 drop-shadow-2xl'>
+        <div className='pb-20 rounded-md xl:h-fit lg:h-fit w-3/4 px-10 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-2 drop-shadow-2xl'>
         <br></br>
           <h2 className="text-2xl text-center lg:text-center font-bold mb-4 mt-4">Hobbies, other skills and more about me...</h2>
         
@@ -145,14 +149,9 @@ const About = () => {
             <p className="text-base text-center lg:text-left font-bold mb-1 text-gray-800 ">
             &nbsp; &nbsp;I'm happy I'm able to share some pictures and videos that capture the parts of who I am and the adventures I've had. Take a peek and join me on this walk through my lense as journey life and stuff!
           </p>
-
-
-        <PhotoVideoSwiper />
-       
- 
-       
         </div>
         </div>
+      
         <br></br>
         <br></br>
         <Divider />

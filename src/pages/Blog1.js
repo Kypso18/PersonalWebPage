@@ -31,7 +31,7 @@ const Blog1 = () => {
     }}
   >
 
-    <div className='flex flex-col items-center py-20'>
+    <div className='flex flex-col items-center py-32'>
     
     
        
@@ -69,6 +69,7 @@ const Blog1 = () => {
       </div>
     </div>
     </div>
+    <br></br>
     {showScrollTop && (
         <div
           className="animate-bounce hover:bg-blue-400 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 fixed bottom-8 right-8 bg-white/50 text-gray-900 p-2 rounded-full cursor-pointer shadow"
