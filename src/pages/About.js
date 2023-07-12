@@ -6,6 +6,7 @@ import AboutPic from '../assets/AboutPic.jpg';
 import { BsChevronDoubleDown } from 'react-icons/bs';
 import '../pages/About.css';
 import Blogs from '../components/Blogs';
+import MoreAbout from '../assets/Picv1 (3).jpg';
 
 
 
@@ -141,14 +142,20 @@ const About = () => {
             &nbsp; &nbsp;Welcome to my space. I like to share a little bit of myself here; I love engaging in a variety of activities that keep life fun and fulfilling. Whether I'm diving into exciting online games, getting lost in captivating books, staying fit at the gym, or capturing beautiful moments through photography and remembering them in the future as pieces of myself that made me who I am and be able to share my experience through it to the next generation. </p>
 
             <p className="text-base text-center lg:text-left font-bold mb-1 text-gray-800 ">
-            &nbsp; &nbsp;But wait, there's more! In addition to my website development skills, I'm also well-versed in using Canva, Microsoft Office Programs, and Google Workspace. I have a knack for event management, research, and data collection too. And let's not forget about my excellent communication skills, both in verbal and written forms.</p>
+            &nbsp; &nbsp;Aside from my website development skills, there's more! <span className='text-white bold underline'>I'm also well-versed in using Canva, Microsoft office programs, and Google workspace. I have a knack for event management, research, and data collection too. And let's not forget about my excellent communication skills, both in verbal and written forms.</span></p>
 
             <p className="text-base text-center lg:text-left font-bold mb-1 text-gray-800 ">
             &nbsp; &nbsp;As a volunteer and student leader, I've had the privilege of meeting incredible people from diverse backgrounds. It's an absolute joy to interact with individuals who bring unique perspectives and experiences to the table.</p>
 
             <p className="text-base text-center lg:text-left font-bold mb-1 text-gray-800 ">
-            &nbsp; &nbsp;I'm happy I'm able to share some pictures and videos that capture the parts of who I am and the adventures I've had. Take a peek and join me on this walk through my lense as journey life and stuff!
+            &nbsp; &nbsp;I'm happy I'm able to share some pictures  that capture the parts of my adventures that I've had. Take a peek and join me on this walk through my lense as journey life and stuff!
           </p>
+          <img
+              src= {MoreAbout}
+              alt= 'aboutPics'
+              className="w-fit h-auto mx-auto pt-5"
+            />
+          
         </div>
         </div>
       
