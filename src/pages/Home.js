@@ -10,7 +10,7 @@ import ContactForm from '../components/ContactForm';
 import CertificateSwiper from '../components/CertificateSwiper';
 import Drei from '../assets/reviews/drei.jpg';
 import Adas from '../assets/reviews/Adas.jpg';
-
+import Jared from '../assets/reviews/jared.png';
 
 function Home() {
   const skills = [
@@ -56,6 +56,12 @@ function Home() {
       name: 'Mahdi Adas S. Adad',
       opinion: 'He is good friend we learned a lot from each other, I wish for him all best',
       text: '5/5' ,
+    },
+    {
+      picture: Jared,
+      name: 'Jared Eiden Belvis',
+      opinion: 'Skipper is a responsible member in a group project. He finishes all the tasks that was given to him. There were times where he would work on a certain task even without the command of the leader just to prepare for the presentation of the project.',
+      text: '4/5' ,
     },
   
   ];
