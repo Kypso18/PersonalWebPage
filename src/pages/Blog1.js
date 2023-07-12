@@ -31,7 +31,7 @@ const Blog1 = () => {
     }}
   >
 
-    <div className='flex flex-col items-center py-32'>
+    <div className='flex flex-col items-center py-40'>
     
     
        
