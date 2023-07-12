@@ -30,7 +30,8 @@ const Blog1 = () => {
         'linear-gradient(90deg, rgba(131, 126, 226, 0.55) 24%, rgba(114, 114, 226, 0.55) 58%, rgba(0, 212, 255, 0.55) 100%)'
     }}
   >
-
+<br></br>
+<br></br>
     <div className='flex flex-col items-center py-40'>
     
     
