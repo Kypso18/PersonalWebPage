@@ -56,7 +56,7 @@ const Blog1 = () => {
           <p className="text-lg mb-6">
           &nbsp; &nbsp;I do not think there is a wrong choice, as long as it is aligned with one’s values and interests. But how do I find out what those are? How do I discover what makes me happy and fulfilled in this field that is ever evolving?
           </p>
-          <p>
+          <p className="text-lg mb-6">
           &nbsp; &nbsp;I think the best way to do that is to try new things, to experiment with pet projects, to learn from others, and to reflect on my experiences. I don’t have to commit to anything right away, but I can explore different possibilities and see what resonates with me. I can also seek feedback and advice from people who know me well or who have gone through similar transitions.
           </p>
           <p className="text-lg mb-6">
