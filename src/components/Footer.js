@@ -15,21 +15,25 @@ export default function FooterWithSocialMediaIcons() {
           <div className="mt-4 flex space-x-6 justify-center sm:mt-0 sm:justify-center">
           <Footer.Icon 
               href="https://www.facebook.com/skipper.paloma/"
+              target="_blank"
               icon={BsFacebook}
               className="text-black-100 hover:text-gray-200"
             />
             <Footer.Icon
               href="https://www.instagram.com/skippah.m_a.p/"
+              target="_blank"
               icon={BsInstagram}
               className="text-black-100  hover:text-gray-200"
             />
             <Footer.Icon
               href="https://www.linkedin.com/in/skipper-paloma/"
+              target="_blank"
               icon={BsLinkedin}
               className="text-black-100  hover:text-gray-200"
             />
             <Footer.Icon
               href="https://github.com/Kypso18"
+              target="_blank"
               icon={BsGithub}
               className="text-black-100  hover:text-gray-200"
             />
