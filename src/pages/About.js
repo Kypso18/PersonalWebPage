@@ -100,8 +100,6 @@ const About = () => {
           )}
         </div>
         </div>
-        
-    
         <Divider />
         <div className='flex flex-col items-center'>
         <div className='rounded-md xl:h-fit lg:h-fit w-3/4 px-10 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-2 drop-shadow-2xl'>
@@ -164,14 +162,7 @@ const About = () => {
         <Divider />
         <Blogs />
          <br></br>
-
-        
-        
-    
-        
-
-      
-
+         <br></br>
       {showScrollTop && (
         <div
           className="animate-bounce hover:bg-blue-400 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 fixed bottom-8 right-8 bg-white/50 text-gray-900 p-2 rounded-full cursor-pointer shadow"
