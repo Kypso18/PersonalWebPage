@@ -146,7 +146,7 @@ const About = () => {
             &nbsp; &nbsp;As a volunteer and student leader, I've had the privilege of meeting incredible people from diverse backgrounds. It's an absolute joy to interact with individuals who bring unique perspectives and experiences to the table.</p>
 
             <p className="text-base text-center lg:text-left font-bold mb-1 text-gray-800 ">
-            &nbsp; &nbsp;I'm happy I'm able to share some pictures  that capture the parts of my adventures that I've had. Take a peek and join me on this walk through my lense as journey life and stuff!
+            &nbsp; &nbsp;I'm happy I'm able to share some pictures  that capture the parts of my adventures that I've had. Take a peek and join me on this walk through my lense as I journey life and stuff!
           </p>
           <img
               src= {MoreAbout}
