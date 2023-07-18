@@ -34,7 +34,7 @@ const ExperienceSection = () => {
     <section className="py-8">
     <div className="container mx-auto px-12 xl:px-14 md:px-24 lg:px-32 sm:px-20">
       <h2 className="text-2xl font-bold mb-4 text-center">Previous Job Experiences</h2>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols lg:grid-cols-3">
         {jobExperiences.map((experience) => (
           <div key={experience.id} className="bg-white/50 rounded-lg p-4 shadow-md">
             <div className="flex items-center mb-2">
