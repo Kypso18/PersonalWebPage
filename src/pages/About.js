@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Divider from '../components/Divider';
-import { FaArrowUp, FaSchool  } from 'react-icons/fa';
-import { MdDateRange } from 'react-icons/md';
+import { FaArrowUp } from 'react-icons/fa';
 import AboutPic from '../assets/AboutPic.jpg';
 import { BsChevronDoubleDown } from 'react-icons/bs';
 import '../pages/About.css';
 import Blogs from '../components/Blogs';
 import MoreAbout from '../assets/Picv1 (3).jpg';
+import JobExp from '../components/jobExperiences';
+import Acad from '../components/Acads'
 
 
 
@@ -35,11 +36,7 @@ const About = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const timelineData = [
-    { id: 1, school: 'Pembo Elementary school', title: 'Elementary School', year: '2006 - 2011' },
-    { id: 2, school: 'Benigno "Ninoy" S. Aquino High School ', title: 'High School', year: '2012 - 2015' },
-    { id: 3, school: 'Rizal Technological University', title: 'College-BS in Industrial Engineering', year: '2015 - Present' }
-  ];
+  
 
 
   
@@ -101,39 +98,17 @@ const About = () => {
         </div>
         </div>
         <Divider />
-        <div className='flex flex-col items-center'>
-        <div className='rounded-md xl:h-fit lg:h-fit w-3/4 px-10 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-2 drop-shadow-2xl'>
-      
-  <h2 className="text-2xl text-center lg:text-center font-bold mt-4">Academic Background</h2>
-  <div className="container mx-auto px-4 py-8">
-    <div className="flex justify-center mx-10 px-auto">
-      <div className="timeline flex flex-row mx-auto px-auto">
-        {timelineData.map((item) => (
-          <div className="timeline-item items-center text-center flex-1" key={item.id}>
-            <div className="timeline-icon flex items-center justify-center">
-              <FaSchool className="text-3xl" />
-            </div>
-            <div className="timeline-content">
-              <h2 className="text-sm sm:text-md md:text-lg lg:text-lg font-bold mb-1 text-black/60">{item.school}</h2>
-              <h3 className="text-md md:text-md lg:text-lg font-semibold mb-2">{item.title}</h3>
-              <p className="text-sm md:text-base lg:text-lg text-black mb-2">
-                <MdDateRange className="inline-block mr-2" />
-                {item.year}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+        <JobExp />
+        <Divider />
+        <Acad />
+        
 
       <Divider />
       <div className='flex flex-col items-center'>
+      <h2 className="text-2xl text-center lg:text-center font-bold mb-4 mt-4">Hobbies, other skills and more about me...</h2>
         <div className='pb-20 rounded-md xl:h-fit lg:h-fit w-3/4 px-10 bg-gray-300/60 shadow-lg ml-4 mr-4 mt-2 drop-shadow-2xl'>
         <br></br>
-          <h2 className="text-2xl text-center lg:text-center font-bold mb-4 mt-4">Hobbies, other skills and more about me...</h2>
+          
         
         
           <p className="text-base text-center lg:text-left font-bold mb-1 text-gray-800 ">
