@@ -24,7 +24,7 @@ const academicBackground = [
 const AcademicBackgroundSection = () => {
   return (
     <section className="py-8">
-      <div className="container mx-auto px-12 xl:px-44 md:px-24 lg:px-32 sm:px-20">
+      <div className="container mx-auto px-12 xl:px-48 md:px-24 lg:px-32 sm:px-20">
         <h2 className="text-2xl font-bold mb-4 text-center">Academic Background</h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-2">
           {academicBackground.map((academic) => (
