@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import WebLogo from '../assets/WebportLogo.png';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 function NavItem({ to, children }) {
   return (
@@ -49,8 +50,9 @@ const Navbar = () => {
         <img
           src={WebLogo}
           alt="WebLogo"
-          className="object-contain hover:animate-pulse h-20 w-30"
+          className="object-contain h-20 w-30"
         />
+        <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }} />
       </Link>
     
           </div>
