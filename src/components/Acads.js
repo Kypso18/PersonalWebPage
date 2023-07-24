@@ -14,7 +14,7 @@ const academicBackground = [
   {
     id: 2,
     institution: 'KodeGo Philippines',
-    degree: 'Fullstack Web Development',
+    degree: 'Fullstack Web Development-Best in MINI PROJECT 2',
     graduationYear: '2023',
     description: 'Equipped me with the necessary entry level skills to penetrate the tech industry.',
   },
