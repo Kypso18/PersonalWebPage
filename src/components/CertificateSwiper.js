@@ -3,10 +3,11 @@ import 'swiper/swiper-bundle.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import Cert1 from '../assets/certs/Cert1.jpg';
-import Cert2 from '../assets/certs/Cert2.jpg';
+import Cert2 from '../assets/certs/Cert2.png';
 import Cert3 from '../assets/certs/Cert3.jpg';
 import Cert4 from '../assets/certs/Cert4.png';
 import Cert5 from '../assets/certs/Cert5.jpg';
+import Cert6 from '../assets/certs/Cert6.jpg';
 
 
 
@@ -22,9 +23,9 @@ const CertificateSwiper = () => {
     },
     {
       id: 2,
-      title: 'Sustainability',
+      title: 'KodeGo: Fullstack Web Development',
       image: Cert2,
-      url: 'https://asu.badgr.com/public/assertions/f7JUZaUiSU2KDEufTW0C8Q?v=',
+      url: 'https://assets.kodego.ph/public/isa/cPdmC6ut6jhFAaUbrPiv2lOSXqZoqgiRb3WfyubD.pdf',
     },
     {
         id: 3,
@@ -43,6 +44,12 @@ const CertificateSwiper = () => {
         title: 'Foundations of Project Management',
         image: Cert5,
         url: 'https://www.coursera.org/account/accomplishments/certificate/L9WXS8QLJKLV'
+      },
+      {
+        id: 6,
+        title: 'Sustainability',
+        image: Cert6,
+        url: 'https://asu.badgr.com/public/assertions/f7JUZaUiSU2KDEufTW0C8Q?v=',
       }
    
   ];
