@@ -1,6 +1,6 @@
 import React from 'react';
 import { saveAs } from 'file-saver';
-import resumePDF from '../assets/Skipper_PalomaResume2023.pdf';
+import resumePDF from '../assets/GeneralResume_SkipperPaloma.pdf';
 import { motion } from 'framer-motion';
 
 
